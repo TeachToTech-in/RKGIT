@@ -1,0 +1,8 @@
+package Lecture_08;
+
+public class BubbleSort {
+	public static void main(String[] args) {
+		int x =(int) (Math.log(8)/Math.log(2));
+			System.out.println(Math.pow(2, x+1));
+	}
+}

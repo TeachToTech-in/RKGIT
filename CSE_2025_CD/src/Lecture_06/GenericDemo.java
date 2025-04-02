@@ -1,0 +1,26 @@
+package Lecture_06;
+
+import java.util.TreeSet;
+
+import LECTURE_01.Circle;
+
+public class GenericDemo {
+	public static <T extends Number> double Demo(T x, T y) {
+		return (x.doubleValue() + y.doubleValue()) / 2;
+	}
+	public static void main(String[] args) {
+		//System.out.println(Demo(44, 77));
+		TreeSet<Integer> t = new TreeSet<>();
+		t.add(55);
+		t.add(32);
+		t.add(34);
+		t.add(86);
+		System.out.println(t);
+		TreeSet<Circle> t1 = new TreeSet<>();
+		t1.add(new Circle(55));
+		t1.add(new Circle (44));
+		t1.add(new Circle(34));
+		t1.add(new Circle(18));
+		System.out.println(t1);
+	}
+}
