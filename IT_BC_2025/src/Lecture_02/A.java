@@ -16,4 +16,13 @@ public class A {
 	final void show() {
 		System.out.println("The Value of X" + x);
 	}
+
+	@Override
+	public String toString() {
+		return "A [x=" + x + "]";
+	}
+	public boolean equals(A a) 
+	{
+		return this.x==a.x;
+	}
 }
