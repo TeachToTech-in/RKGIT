@@ -13,4 +13,9 @@ public class A {
 	public void showX() {
 		System.out.println("THe value of X "+x);
 	}
+	@Override
+	public String toString() {
+		return "A [x=" + x + "]";
+	}
+	
 }

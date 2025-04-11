@@ -4,6 +4,7 @@ package Lecture_02;
 class X {
 	//Member | Instance 
 	//The blank final field z may not have been initialized
+
 	final int z;
 	X(){
 		z=10;
@@ -12,7 +13,11 @@ class X {
 		this.z=z;
 	}
 	//class Variable
-	static int k;
+	//The blank final field k may not have been initialized
+	final static int k;
+	static {
+		k=98;
+	}
 	final void xyz(int x, int y) {
 		System.out.println("The Sum of Two Values is " + (x + y));
 	}
@@ -31,6 +36,6 @@ public class FinalDemo {
 			final int x;
 			x=10;
 			//The final local variable x may already have been assigned
-			x=12;
+			//x=12;
 	}
 }
